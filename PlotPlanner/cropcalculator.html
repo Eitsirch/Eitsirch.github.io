@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <title>Plot Planner: Crop Calculator</title>
+        <link rel="Shortcut icon" href="IMAGES/chicken.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+        <script src="CSS/script.js"></script>
+    </head>
+<body id="backgroundone">
+
+    
+        <div id="wrapper">
+
+            <header> 
+             
+            <nav>
+                <a href="file:///Users/emilychristie/Desktop/Eitsirch.github.io/index.html">Portfolio</a>
+                <a href="home.html">Website Home</a>
+                <a href="cropcalculator.html">Plot Planner</a> 
+                <a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki">Stardew Valley Wiki</a>
+                <a href="contactpage.html">Contact</a>
+            </nav>
+            
+            </header>
+            </div>
+
+      <main>
+               
+               <div class="textslabsCrop">
+
+                <h2> Drag and Drop to Plan your Plot!</h2>
+
+                <table id="tabledragandrop">
+
+                    <!-- the rowspan="2" width="100px" height="100px" in the td rows where colspan and span is used will throw an error 
+                    in the html checker, you cant get the table to work if you move them into CSS. Its too late accept it.  -->
+                   
+                  <tr>
+                      <th> <div id="tulip" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Tulipspring.png" alt="Tulip" title="Tulip" draggable="true" ondragstart="drag(event)" id="drag1"></div></th>
+                      <th> <div id="bluejazz" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Blue_Jazzspring.png" alt="Blue_Jazz" title="blue jazz" draggable="true" ondragstart="drag(event)" id="drag2"></div></th>
+                      <th> <div id="poppy" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Poppysummer.png" alt="Poppy" title="Poppy" draggable="true" ondragstart="drag(event)" id="drag3"></div> </th>
+                      <th> <div id="spangle" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Summer_Spangle.png" alt="Summer_Spangle" title="summer spangle" draggable="true" ondragstart="drag(event)" id="drag4"></div></th>
+                      <th> <div id="ancientfruit" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Ancient_Fruit.png" alt="Ancient_Fruit" title="ancient fruit" draggable="true" ondragstart="drag(event)" id="drag5"></div></th>
+                      <th> <div id="tea" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Tea_Leaves.png" alt="Tea_Leaves" title="Tea Leaves" draggable="true" ondragstart="drag(event)" id="drag6"></div></th>
+                      <th> <div id="sunflower" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Sunflower.png" alt="Sunflower" title="Sunflower" draggable="true" ondragstart="drag(event)" id="drag7"></div></th>
+                      <th> <div id="fairyrose" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/winter/Fairy_Rosefall.png" alt="Fairy_Rose" title="Fairy rose"  draggable="true" ondragstart="drag(event)" id="drag8"></div></th>
+                  </tr>
+                  <tr>
+                      <td> <div id="Cauliflower" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/springcrops/Cauliflower.png" alt="Cauliflower" title="Cauliflower" draggable="true" ondragstart="drag(event)" id="drag9"> </div></td>
+                      <td colspan="2" rowspan="2" ><div id="plot1" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td colspan="2" rowspan="2" > <div id="plot8" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td colspan="2" rowspan="2" > <div id="plot7" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td> <div id="amaranth" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/autumncrops/Amaranth.png" alt="amaranth" title="Amaranth" draggable="true" ondragstart="drag(event)" id="drag10"> </div></td>
+                  </tr>
+                  <tr> 
+                      <td> <div id="parsnip" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/springcrops/Parsnip.png" alt="parsnip" title="Parsnip" draggable="true" ondragstart="drag(event)" id="drag11"> </div></td>
+                      <td> <div id="artichoke" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/autumncrops/Artichoke.png" alt="artichoke" title="Artichoke" draggable="true" ondragstart="drag(event)" id="drag12"> </div> </td>
+                  </tr>
+                  <tr >
+                      <td> <div id="greenbean" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/springcrops/Green_Bean.png" alt="green bean" title="Green Bean" draggable="true" ondragstart="drag(event)" id="drag13"> </div> </td>
+                      <td colspan="2" rowspan="2" > <div id="plot2" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td colspan="2" rowspan="2" > <div id="sprinkler" > <img src="IMAGES/Quality_Sprinkler.png" alt="sprinkler" title="sprinkler"></div> </td>
+                      <td colspan="2" rowspan="2" > <div id="plot6" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td> <div id="pumpkin" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/autumncrops/Pumpkin.png" alt="Pumpkin" title="pumpkin" draggable="true" ondragstart="drag(event)" id="drag14"> </div>  </td>
+                  </tr>
+                  <tr>
+                      <td> <div id="potato" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="IMAGES/springcrops/Potato.png" alt="potato" title="potato" draggable="true" ondragstart="drag(event)" id="drag15"> </div>  </td>
+                      <td> <div id="eggplant" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="IMAGES/autumncrops/Eggplant.png" alt="Eggplant" title="Eggplant" draggable="true" ondragstart="drag(event)" id="drag16"> </div> </td>
+                  </tr>
+                      
+                  <tr>  
+                      <td> <div id="kale" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="IMAGES/springcrops/Kale.png" alt="kale" title="kale" draggable="true" ondragstart="drag(event)" id="drag17"> </div> </td>
+                      <td colspan="2" rowspan="2" > <div id="plot3" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td colspan="2" rowspan="2" > <div id="plot4" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td colspan="2" rowspan="2" > <div id="plot5" ondrop="drop(event)" ondragover="allowDrop(event)"  ></div></td>
+                      <td> <div id="bokchoy" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/autumncrops/Bok_Choy.png" alt="Bok choy" title="bok choy" draggable="true" ondragstart="drag(event)" id="drag18"> </div> </td>
+                  </tr>    
+                  <tr>
+                      <td> <div id="strawberry" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/springcrops/Strawberry.png" alt="strawberry" title="strawberry" draggable="true" ondragstart="drag(event)" id="drag19"> </div> </td>
+                      <td> <div id="cranberry" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/autumncrops/Cranberries.png" alt="canberry" title="canberry" draggable="true" ondragstart="drag(event)" id="drag20"> </div> </td>
+                  
+                  </tr>
+                  <tr>
+                      <td> <div id="coffeebean" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="IMAGES/springcrops/Coffee_Bean.png" alt="coffee bean" title="coffee bean" draggable="true" ondragstart="drag(event)" id="drag21"> </div> </td>
+                      <td> <div id="blueberry" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Blueberry.png" alt="blueberry" title="blueberry" draggable="true" ondragstart="drag(event)" id="drag22"> </div>  </td>
+                      <td> <div id="hops" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Hops.png" alt="hops" title="hops" draggable="true" ondragstart="drag(event)" id="drag23"> </div> </td>
+                      <td> <div id="hotpepper" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Hot_Pepper.png" alt="hot pepper" title="hot pepper" draggable="true" ondragstart="drag(event)" id="drag24"> </div>  </td>
+                      <td> <div id="melon" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Melon.png" alt="melon" title="melon" draggable="true" ondragstart="drag(event)" id="drag25"> </div>  </td>
+                      <td> <div id="radish" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Radish.png" alt="radish" title="radish" draggable="true" ondragstart="drag(event)" id="drag26"> </div></td>
+                      <td> <div id="tomato" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Tomato.png" alt="tomato" title="tomato" draggable="true" ondragstart="drag(event)" id="drag27"> </div></td>
+                      <td> <div id="corn" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="IMAGES/summercrops/Corn.png" alt="corn" title="corn" draggable="true" ondragstart="drag(event)" id="drag28"> </div> </td>
+                  </tr>
+                  </table>
+
+
+
+
+
+
+
+           
+               
+                 <p>  <b>Crops</b> are plants that are grown from seeds to be harvested for the purpose of profit, food, or gifting.
+                    Generally, each crop is seasonal. It can be planted only during its designated season, and when seasons change
+                     (after the 28th day), the crop will wither and die. Multi-season crops (i.e., Ancient Fruit, Coffee Bean, Corn, Sunflower, and Wheat)
+                     , however, will continue to grow during all specified seasons.  </p>
+                     <h2> Click on the season to see Crop information</h2>
+                
+
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'spring')">Spring</button>
+                <button class="tablinks" onclick="openCity(event, 'summer')">Summer</button>
+                <button class="tablinks" onclick="openCity(event, 'autumn')">Autumn</button>
+                <button class="tablinks" onclick="openCity(event, 'winter')">Flowers/Rare</button>
+            </div>
+              
+              <!-- Tab content -->
+              <div id="spring" class="tabcontentspring">
+          
+                <div class="croptable">
+                  <table >
+                      <tr>
+                          <th> </th>
+                          <th>Crop</th>
+                          <th >Buy Price</th>
+                          <th >Sell Price</th>
+                           <th>Profit </th>
+                      </tr>
+                      <tr>
+                        <td> <img src="IMAGES/winter/Tulipspring.png" alt="Tulip" title="Tulip"></td>
+                        <td >Tulip</td>
+                        <td > 20g</td>
+                        <td>30g</td>
+                        <td> +10g </td>
+                     </tr>
+                      <tr>
+                          <td> <img src="IMAGES/springcrops/Cauliflower.png" alt="Cauliflower" title="Cauliflower">  </td>
+                          <td >Califlower</td>
+                          <td > 80g</td>
+                          <td>175g</td>
+                          <td> +95g </td>
+                      </tr>
+                     <tr>
+                        <td> <img src="IMAGES/springcrops/Parsnip.png" alt="parsnip" title="Parsnip" ></td>
+                        <td >Parsnip</td>
+                        <td > 20g</td>
+                        <td> 35g</td>
+                        <td> +15g </td>
+                     </tr>
+
+                     <tr>
+                        <td> <img src="IMAGES/springcrops/Green_Bean.png" alt="green bean" title="Green Bean" > </td>
+                        <td >Green Bean</td>
+                        <td > 60g</td>
+                        <td> 80g per harvest (2 beans)</td>
+                        <td> +20g* </td>
+                     </tr>
+                     <tr>
+                        <td> <img src="IMAGES/springcrops/Potato.png" alt="potato" title="potato"> </td>
+                        <td >Potato</td>
+                        <td > 50g</td>
+                        <td> 80g </td>
+                        <td> +30g </td>
+                     </tr>
+                     <tr>
+                        <td> <img src="IMAGES/springcrops/Kale.png" alt="kale" title="kale"></td>
+                        <td >Kale</td>
+                        <td > 70g</td>
+                        <td> 110g </td>
+                        <td> +40g </td>
+                     </tr>
+                     <tr>
+                        <td> <img src="IMAGES/springcrops/Strawberry.png" alt="strawberry" title="strawberry" ></td>
+                        <td >Strawberry</td>
+                        <td > 100g</td>
+                        <td> 120g</td>
+                        <td> +20g </td>
+                     </tr>
+                     <tr>
+                        <td> <img src="IMAGES/springcrops/Coffee_Bean.png" alt="coffee bean" title="coffee bean"></td>
+                        <td>Coffee Bean</td>
+                        <td> 2500g or Free</td>
+                        <td> 15g</td>
+                        <td> ** </td>
+                     </tr>
+                  </table>
+                </div>
+              </div>
+              
+              <div id="summer" class="tabcontentsummer">
+                
+
+                <div class="croptable">
+                    <table >
+                        <tr>
+                            <th> </th>
+                            <th>Crop</th>
+                            <th >Buy Price</th>
+                            <th >Sell Price</th>
+                             <th>Profit </th>
+                        </tr>
+                        <tr>
+                            <td> <img src="IMAGES/summercrops/Blueberry.png" alt="blueberry" title="blueberry" ></td>
+                            <td>Blueberry</td>
+                            <td> 80g</td>
+                            <td> 100g per Harvest</td>
+                            <td> ** </td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/summercrops/Hops.png" alt="hops" title="hops" > </td>
+                            <td>Hops</td>
+                            <td> 60g</td>
+                            <td> 50g per Harvest</td>
+                            <td> -10g* </td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/summercrops/Hot_Pepper.png" alt="hot pepper" > </td>
+                            <td>Hot Pepper</td>
+                            <td> 40g</td>
+                            <td> 80g per Harvest</td>
+                            <td> +40g* </td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/summercrops/Melon.png" alt="melon" title="melon"></td>
+                            <td>Melon</td>
+                            <td> 80g</td>
+                            <td> 250g</td>
+                            <td> +170g </td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/summercrops/Radish.png" alt="radish" title="radish"></td>
+                            <td>Radish</td>
+                            <td> 40g</td>
+                            <td> 90g</td>
+                            <td> +50g </td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/summercrops/Tomato.png" alt="tomato" title="tomato"></td>
+                            <td>Tomato</td>
+                            <td> 50g</td>
+                            <td> 120g</td>
+                            <td> +70g* </td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/summercrops/Corn.png" alt="corn" title="corn" ></td>
+                            <td>Corn</td>
+                            <td> 150g</td>
+                            <td> 100g per harvest</td>
+                            <td>  -50g* </td>
+                         </tr>
+                        </table>
+                    </div>
+              </div>
+
+
+              
+              <div id="autumn" class="tabcontentautumn">
+           
+                <div class="croptable">
+                    <table >
+                        <tr>
+                            <th> </th>
+                            <th>Crop</th>
+                            <th >Buy Price</th>
+                            <th >Sell Price</th>
+                             <th>Profit </th>
+                        </tr>
+                        <tr>
+                            <td> <img src="IMAGES/winter/Fairy_Rosefall.png" alt="Fairy_Rose" title="Fairy rose" ></td>
+                            <td>Fairy Rose</td>
+                            <td> 200g</td>
+                            <td> 290g </td>
+                            <td> +90g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/autumncrops/Amaranth.png" alt="amaranth" title="Amaranth" ></td>
+                            <td>Amaranth</td>
+                            <td> 200g</td>
+                            <td> 290g </td>
+                            <td> +90g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/autumncrops/Artichoke.png" alt="artichoke" title="Artichoke" ></td>
+                            <td>Artichoke</td>
+                            <td> 30g</td>
+                            <td> 160g </td>
+                            <td> +130g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/autumncrops/Pumpkin.png" alt="Pumpkin" title="pumpkin"></td>
+                            <td>Pumpkin</td>
+                            <td> 100g</td>
+                            <td> 320g </td>
+                            <td> +220g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/autumncrops/Eggplant.png" alt="Eggplant" title="Eggplant" ></td>
+                            <td>Eggplant</td>
+                            <td> 20g</td>
+                            <td> 60g </td>
+                            <td> +40g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/autumncrops/Bok_Choy.png" alt="Bok choy" title="bok choy" ></td>
+                            <td>Bok Choy</td>
+                            <td> 50g</td>
+                            <td> 80g </td>
+                            <td> +30g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/autumncrops/Cranberries.png" alt="canberry" title="canberry" ></td>
+                            <td>Cranberries</td>
+                            <td> 240g</td>
+                            <td> 150g per harvest </td>
+                            <td> -90g*</td>
+                         </tr>
+                        </table>
+                    </div>  
+                    </div>      
+                
+              
+              <div id="winter" class="tabcontentwinter">
+               
+                <div class="croptable">
+                    <table>
+                        <tr>
+                            <th> </th>
+                            <th>Crop</th>
+                            <th >Buy Price</th>
+                            <th >Sell Price</th>
+                             <th>Profit </th>
+                        </tr>
+                        <tr>
+                            <td> <img src="IMAGES/winter/Blue_Jazzspring.png" alt="Blue_Jazz" title="blue jazz"></td>
+                            <td>Blue Jazz</td>
+                            <td> 30g</td>
+                            <td> 50g</td>
+                            <td> 20g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/winter/Poppysummer.png" alt="Poppy" title="Poppy" ></td>
+                            <td>Poppy</td>
+                            <td> 100g</td>
+                            <td> 140g</td>
+                            <td> +40g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/winter/Summer_Spangle.png" alt="Summer_Spangle" title="summer spangle"></td>
+                            <td>Summer Spangle</td>
+                            <td> 50g</td>
+                            <td> 90g</td>
+                            <td> +40g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/winter/Ancient_Fruit.png" alt="Ancient_Fruit" title="ancient fruit" ></td>
+                            <td>Ancient Fruit</td>
+                            <td> 100-1,000g</td>
+                            <td> 550g</td>
+                            <td> +440g*</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/winter/Tea_Leaves.png" alt="Tea_Leaves" title="Tea Leaves"></td>
+                            <td>Tea Leaves</td>
+                            <td> 0g</td>
+                            <td> 55g</td>
+                            <td> +55g</td>
+                         </tr>
+                         <tr>
+                            <td> <img src="IMAGES/winter/Sunflower.png" alt="Sunflower" title="Sunflower"></td>
+                            <td>Sunflower</td>
+                            <td> 200g</td>
+                            <td> 240g</td>
+                            <td> +40g</td>
+                         </tr>
+                         </table>
+                        </div>
+                        </div>
+                 </div>
+
+
+      
+        </main>
+
+            
+    <footer>
+    <p class="left"> all images remain the original property of the original artists</p>
+    <a href="contactpage.html" class="right"> Contact Us</a>
+      <img id="Kitty" src="IMAGES/cat1.png" alt="Kitty">
+   </footer>
+</body>
+  </html>

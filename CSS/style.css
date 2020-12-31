@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+
+/* font-family: 'Cinzel Decorative', cursive; */
+/* font-family: 'Acme', sans-serif; */
+
+body {
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    padding: 0;
+    margin: 0;
+    background-color: dimgray;
+    background-image: url("../images/botw_map.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    background-color: rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-size: 1.8em;
+    font-family: 'Cinzel Decorative', cursive;
+    color: black;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+
+#banner {
+    width: 100%;
+}
+
+header {
+    position: relative;
+    height: 400px;
+    background-color: darkgrey;
+}
+
+header h1 {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+header nav {
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+}
+
+header nav a {
+    color: black;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+}
+    
+header nav a:hover {
+    color: white;
+}
+
+main {
+    padding-bottom: 55px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+    color: white;
+    font-family: 'Acme', sans-serif;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    position: relative;
+    float: right;
+    top: 1em;
+}
+
+footer a {
+    font-size: 22px;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+main section a {
+    font-size:1.2em;
+    color: white;
+    margin: auto;
+    padding: 15px;
+}
+
+.fancy {
+    font-family: 'Cinzel Decorative', cursive;
+    color: red;
+}
+
+.standard {
+    font-family: 'Acme', sans-serif;
+}
+
+#showhide {
+    width: 250px;
+    margin: auto;
+}
+
+#readmore {
+    display: none;
+    padding-top: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin: auto;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.item img {
+   
+    height: 200px;
+    width: 200px;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.item a:hover {
+    text-decoration: underline;
+}

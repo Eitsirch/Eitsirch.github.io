@@ -1,0 +1,420 @@
+/*CSS RULES - */
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+/* font-family: 'Press Start 2P', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* body - none (100%) / header none (height 400)/ main  and section 60% (1200px) / drag and drop (400px)/ */
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: whitesmoke;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#backgroundone{
+  padding: 0px;
+  margin: 0px;
+  background-image: url(../IMAGES/backgroundone.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#contactbody{
+  padding: 0px;
+  margin: 0px;
+  background-image: url(../IMAGES/contactpagebackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+#homepagebody{
+  padding: 0px;
+  margin: 0px;
+  background-image: url(../IMAGES/homepagebackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+main h2{
+    font-family: 'Press Start 2P', cursive; 
+    font-size: .9vw;
+    margin: auto;
+    text-align: center;
+    padding: .9vw;
+}
+
+#wrapper{
+    padding: 1.4vw;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: .9vw;
+    margin: auto;
+    text-align: center;
+    padding: .9px;
+    background-image: url(../IMAGES/header.png);
+    background-size: contain;  
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    
+   
+}
+
+header{
+    
+    height: 28vw;
+    padding: 2.6vw;
+  /*   background-image: url(../IMAGES/header.png);
+   /*  background-size: contain;  
+    background-position: center; /* Center the image 
+    background-repeat: no-repeat; */ 
+    
+}
+
+header nav{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top:22%;
+    right: 40%; 
+}
+header nav a{
+     
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5vw;
+    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+    display: block;
+    list-style-type: none;
+
+    
+    
+     
+}
+
+header nav a:hover{
+    color:black;
+}
+
+
+
+header h1{
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding-top: 90px;
+    color: white;
+
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top:15%;
+    right: 35%;
+   
+
+}
+
+
+#bagchicken{
+    width: 200px;
+    height: 198px;
+    float: left;
+    margin-right: 19%;
+    margin-left:19%;
+  
+  
+  }
+  
+  #blingchicken{
+    width: 200px;
+    height: 198px;
+    float: right;
+    margin-right: 19%;
+    margin-left:19%;
+    
+  }
+
+  main{
+    padding-bottom: 55px;
+    max-width: 1300px;
+    margin: auto;
+    
+    
+    
+}
+
+main .textslabs{
+    padding: 5px;
+    padding-top: 20px;
+    margin: auto;
+    background-color: rgba(138, 119, 119, 0.418);
+    font-family: 'Open Sans', sans-serif;
+    max-width: 700px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main .textslabsCrop{
+  padding: 5px;
+  padding-top: 20px;
+  margin: auto;
+  background-image: url(../IMAGES/textslabbackground.png);
+  background-color: rgba(138, 119, 119, 0.418);
+  font-family: 'Open Sans', sans-serif;
+  max-width: 700px;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+main .textslabshome{
+  padding: 5px;
+  padding-top: 20px;
+  margin: auto;
+  background-image: url(../IMAGES/homebackground.png);
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 700px;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+h3{
+padding: 20px;
+font-family: 'Open Sans', sans-serif;
+font-size: 1em;
+}
+
+#Ghostyblue {
+  float: right;
+ 
+}
+
+#GhostyGreen{
+  float: right;
+  
+}
+
+fieldset{
+border: none;
+}
+
+#formLabels{
+
+  font-size: 1em;
+  font-family: 'Press Start 2P', cursive;
+  
+}
+
+.btns{
+  font-size: 1em;
+  font-family: 'Press Start 2P', cursive;
+  
+} 
+
+
+#submitbuttons {
+  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+
+  padding: 10px;
+  background-color: rgba(138, 119, 119);
+}
+
+#submitbuttons2 {
+  font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
+  
+  padding: 10px;
+  background-color: rgba(138, 119, 119);
+}
+footer .right {
+  position: relative;
+  float: right;
+  top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10PX;
+  color: white;
+}
+
+footer .left {
+  float: left;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10PX;
+  color: white;
+}
+
+#Kitty{
+  float:right;
+}
+
+    #tulip, #bluejazz, #poppy, #spangle, #ancientfruit, #tea, #sunflower, #fairyrose,
+    #Cauliflower, #amaranth, #parsnip, #artichoke, #greenbean, #pumpkin, #potato, 
+    #eggplant, #kale, #bokchoy, #strawberry, #cranberry, #coffeebean, #blueberry, #hops, 
+    #hotpepper, #melon, #radish, #tomato, #corn
+    /* Why did you create so many ID's ? I had plans to create a calculator and each vege would have needed a unique iD */
+    {
+                 /*if this isnt defined you cant drag back off the plot*/
+                 width: 50px;
+                  height: 50px;
+                  
+                }
+    #plot1, #plot2, #plot3, #plot4, #plot5, #plot6, #plot7, #plot8
+    {
+                float: left;
+                width: 100px;
+                height: 100px;
+               /* border: 10px black;*/
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                /* please dont come for me because i used text align*/
+                text-align: center;
+                background-image: url(../IMAGES/hoeDirt.png); 
+                background-repeat: no-repeat, repeat;
+    }   
+    #sprinkler
+    {
+        
+                width: 100px;
+                height: 100px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+    }
+
+
+
+/* drag and drop table syles */
+ #tabledragandrop{
+    margin: auto;
+    border: 0px;
+    padding: 0;
+    background-image: url(../IMAGES/Graveyardcopy.png);
+   
+ }
+ /*warning these are maybe effecting "global" tables but for drag and drop only*/
+  #tabledragandrop th, td, tr {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    background-image: url(../IMAGES/Graveyardcopy.png);
+    
+
+  }
+
+  /* CROP PRICES TABLES*/
+  div .croptable table{
+    background-image: none;
+    background-color: transparent;
+      width: 100%;
+  }
+  div .croptable tr{
+   
+    background-image: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+div .croptable td{
+   
+    background-image: none;
+    background-color: transparent;
+    
+}
+
+div .croptable th{
+  
+    background-image: none;
+    background-color: transparent;
+  
+}
+
+
+  /* CROP PRICES TABs*/
+ .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #eede87;
+    margin: auto;
+  }
+  
+  .tablinks{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    margin: auto;
+  }
+
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgba(155, 231, 145, 0.849);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontentspring {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid  lightgreen;
+    border-top: none;
+    background-color: lightgreen;
+    
+  }
+  .tabcontentsummer {
+    display: none;
+    padding: 6px 12px;
+    border: 12px solid #f0d897;
+    border-top: none;
+    background-color:#f0d897;
+  }
+  
+  .tabcontentautumn {
+    display: none;
+    padding: 6px 12px;
+    border: 12px solid #ffc299;
+    border-top: none;
+    background-color: #ffc299;
+  }
+  
+  .tabcontentwinter {
+    display: none;
+    padding: 6px 12px;
+    border: 12px solid #9fbfdf;
+    border-top: none;
+    background-color:#9fbfdf;
+  }
